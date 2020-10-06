@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productly |The Design Thinking superpowers</title>
+  <meta name="theme-color" content="#FF9900">
+  <meta name="description"
+    content="Tools, tutorials, design and innovation experts, all in one place! The most intuitive way to imagine your next user experience.">
+  <link rel="stylesheet" href="./dist/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/icon.svg" type="image/x-icon">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+    }
+
+    @media screen and (max-width: 350px) {
+      html {
+        font-size: 90% !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white">
+
+  <div class="overflow-x-hidden">
+
+    <!-- Navbar Start -->
+    <nav class="border-b-2 w-full">
+      <nav class="w-full bg-white flex items-center justify-between max-w-screen-xl mx-auto px-4 md:px-12 py-6">
+        <a href="/">
+          <img src="./img/logo.svg" alt="Productly Logo" class="w-32">
+        </a>
+
+        <div class="hidden lg:flex justify-between gap-6 items-center">
+          <a href="/" class="hover:text-orange-400">Product</a>
+          <a href="/" class="hover:text-orange-400">Cutomers</a>
+          <a href="/" class="hover:text-orange-400">Pricing</a>
+          <a href="/" class="hover:text-orange-400">Resources</a>
+          <button
+            class="border bg-white py-2 px-4 rounded-md border-gray-400 hover:bg-orange-400 hover:text-white hover:border-orange-400 transition-all duration-100">Sign
+            in</button>
+          <button
+            class="border hover:bg-white py-2 px-4 hover:text-black rounded-md hover:border-gray-400 bg-orange-400 text-white border-orange-400 transition-all duration-100">Sign
+            up</button>
+        </div>
+
+        <div class="block lg:hidden" x-data="{ isOpen: false }">
+          <div @click="isOpen = !isOpen">
+            <svg class="w-8 h-8 hover:text-orange-400 cursor-pointer" fill="none" stroke="currentColor"
+              viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </div>
+
+          <div
+            class="flex-column justify-between gap-6 items-center absolute  bg-white w-full left-0 shadow-lg px-4 py-6"
+            x-show="isOpen" @click.away="isOpen = false">
+            <a href="/" class="hover:text-orange-400 block my-1 py-2">Product</a>
+            <a href="/" class="hover:text-orange-400 block my-1 py-2">Cutomers</a>
+            <a href="/" class="hover:text-orange-400 block my-1 py-2">Pricing</a>
+            <a href="/" class="hover:text-orange-400 block my-1 py-2">Resources</a>
+            <button
+              class="border bg-white py-2 px-4 rounded-md border-gray-400 hover:bg-orange-400 hover:text-white hover:border-orange-400 transition-all duration-100">Sign
+              in</button>
+            <button
+              class="border hover:bg-white py-2 px-4 hover:text-black rounded-md hover:border-gray-400 bg-orange-400 text-white border-orange-400 transition-all duration-100 ml-4">Sign
+              up</button>
+          </div>
+
+        </div>
+
+      </nav>
+    </nav>
+    <!-- Navbar End -->
+
+    <main class="max-w-screen-sm md:max-w-screen-xl mx-auto">
+
+      <!-- Hero Start -->
+      <section
+        class="grid md:grid-cols-2 gap-8 items-center justify-between w-full bg-white px-4 sm:px-8 py-12 sm:py-16 md:py-24">
+        <div>
+          <h1 class="font-bold text-5xl leading-tight">The Design Thinking superpowers</h1>
+          <p class="font-normal leading-normal mt-8 max-w-sm">Tools, tutorials, design and innovation experts, all in
+            one place!
+            The
+            most intuitive way to imagine your next user experience.</p>
+          <div class="mt-12  flex-column sm:flex items-center justify-start gap-8">
+            <button
+              class="border border-orange-400 rounded-sm bg-orange-400 font-bold text-white px-10 py-3 hover:text-black hover:bg-white transition-all duration-100 hover:shadow-xl">
+              Get Started
+            </button>
+            <a class="font-bold text-orange-400 flex items-center justify-start underline capitalize py-4 mt-4 sm:mt-0"
+              href="/">
+              <svg class="w-6 h-6 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z">
+                </path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+              watch video
+            </a>
+          </div>
+        </div>
+        <div>
+          <img src="/img/hero.svg" alt="Hero imagine" class="w-full">
+        </div>
+      </section>
+      <!-- Hero End -->
+
+      <!-- Services Section Start -->
+      <section class="w-full bg-white px-4 sm:px-8 py-12 sm:py-16 md:py-24">
+
+        <h2 class="font-bold text-center text-3xl max-w-md w-full mx-auto">We design tools to unveil your
+          superpowers</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+          <div class="bg-white hover:shadow-xl rounded-md px-4 py-2 flex-column items-start justify-between">
+            <img src="./img/Group 87.svg" alt="" loading="lazy">
+            <h3 class="font-semibold text-xl mt-6">First click tests</h3>
+            <p class="mt-4">While most people enjoy casino gambling,</p>
+          </div>
+          <div class="bg-white hover:shadow-xl rounded-md px-4 py-2 flex-column items-start justify-between">
+            <img src="./img/Group 86.svg" alt="" loading="lazy">
+            <h3 class="font-semibold text-xl mt-6">Design surveys</h3>
+            <p class="mt-4">Sports betting, lottery and bingo playing for the fun</p>
+          </div>
+          <div class="bg-white hover:shadow-xl rounded-md px-4 py-2 flex-column items-start justify-between">
+            <img src="./img/Group 85.svg" alt="" loading="lazy">
+            <h3 class="font-semibold text-xl mt-6">Preference tests</h3>
+            <p class="mt-4">The Myspace page defines the individual.</p>
+          </div>
+          <div class="bg-white hover:shadow-xl rounded-md px-4 py-2 flex-column items-start justify-between">
+            <img src="./img/Group 84.svg" alt="" loading="lazy">
+            <h3 class="font-semibold text-xl mt-6">Five second tests</h3>
+            <p class="mt-4">Personal choices and the overall personality of the person. </p>
+          </div>
+        </div>
+        <center>
+          <button
+            class="border border-orange-400 rounded-sm bg-orange-400 font-bold text-white px-10 py-3 hover:text-black hover:bg-white transition-all duration-100 hover:shadow-xl uppercase mt-12">
+            Sign up now
+          </button>
+        </center>
+
+      </section>
+      <!-- Services Section Ends-->
+
+      <!-- Details Sectoin Start -->
+      <!-- Section One -->
+      <section
+        class="w-full bg-white px-4 sm:px-8 py-12 sm:py-16 md:py-24 grid grid-cols-1 sm:grid-cols-2 gap-8 justify-between items-center">
+        <div class="px-4">
+          <p class="capitalize text-lg font-medium">Effortless Validation for</p>
+          <h2 class="font-bold text-4xl">Design Professionals</h2>
+          <p class="mt-6">The Myspace page defines the individual, his or her characteristics, traits, personal choices
+            and the overall personality of the person. </p>
+
+          <h3 class="font-bold text-xl mt-8">Accessory makers</h3>
+          <p class="mt-2">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+          </p>
+
+          <h3 class="font-bold text-xl mt-8">Alterationists</h3>
+          <p class="mt-2">If you are looking for a new way to promote your business that won’t cost you more money,
+          </p>
+
+          <h3 class="font-bold text-xl mt-8">Custom Design designers</h3>
+          <p class="mt-2">If you are looking for a new way to promote your business that won’t cost you more money,
+          </p>
+
+        </div>
+        <div data-aos="fade-left">
+          <img src="/img/Image-2.svg" alt="" class="w-full" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Section Two -->
+      <section
+        class="w-full bg-white px-4 sm:px-8 py-12 sm:py-16 md:py-24 grid grid-cols-1 sm:grid-cols-2 gap-8 justify-between items-center">
+        <div class="px-4 sm:order-2">
+          <p class="capitalize text-lg font-medium">Easier decision making for</p>
+          <h2 class="font-bold text-4xl">Product Managers</h2>
+          <p class="mt-6">The Myspace page defines the individual, his or her characteristics, traits, personal choices
+            and the overall personality of the person. </p>
+
+          <!-- <h3 class="font-bold text-xl mt-8">Accessory makers</h3> -->
+          <p class="mt-8 items-center flex">
+            <span class="mr-4 p-2  rounded-xl inline-block bg-orange-400 text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </span>
+            Never worry about overpaying for your energy again.
+          </p>
+
+          <!-- <h3 class="font-bold text-xl mt-8">Alterationists</h3> -->
+          <p class="mt-6 items-center flex">
+            <span class="mr-4 p-2  rounded-xl inline-block bg-orange-400 text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </span>
+            We will only switch you to energy companies that we trust and will treat you right
+          </p>
+
+          <!-- <h3 class="font-bold text-xl mt-8">Custom Design designers</h3> -->
+          <p class="mt-6 items-center flex">
+            <span class="mr-4 p-2 rounded-xl inline-block bg-orange-400 text-white">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+            </span>
+            We track the markets daily and know where the savings are.
+          </p>
+
+        </div>
+        <div class="sm:order-1" data-aos="fade-right">
+          <img src="/img/Image-1.svg" alt="" class="w-full" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Section Three -->
+      <section
+        class="w-full bg-white px-4 sm:px-8 py-12 sm:py-16 md:py-24 grid grid-cols-1 sm:grid-cols-2 gap-8 justify-between items-center">
+        <div class="px-4">
+          <p class="capitalize text-lg font-medium">Optimisation for</p>
+          <h2 class="font-bold text-4xl">Marketers</h2>
+          <p class="mt-6">Few would argue that, despite the advancements of feminism over the past three decades, women
+            still face a double standard when it comes to their behavior. </p>
+
+          <h3 class="font-bold text-xl mt-8">Accessory makers</h3>
+          <p class="mt-2">While most people enjoy casino gambling, sports betting, lottery and bingo playing for the fun
+          </p>
+
+          <h3 class="font-bold text-xl mt-8">Alterationists</h3>
+          <p class="mt-2">If you are looking for a new way to promote your business that won’t cost you more money,
+          </p>
+
+          <h3 class="font-bold text-xl mt-8">Custom Design designers</h3>
+          <p class="mt-2">If you are looking for a new way to promote your business that won’t cost you more money,
+          </p>
+
+        </div>
+        <div data-aos="fade-left">
+          <img src="/img/Image.svg" alt="" class="w-full" loading="lazy">
+        </div>
+      </section>
+
+      <!-- Details Sectoin Ends -->
+
+      <!-- Blog Section Start -->
+      <section class="w-full bg-white px-4 sm:px-8 py-12 sm:py-16 md:py-24">
+        <h2 class="font-bold text-3xl">Marketing Strategies</h2>
+        <p>Join 40,000+ other marketers and get proven strategies on email marketing</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+          <div class="overflow-hidden rounded-xl hover:shadow-2xl cursor-pointer">
+            <img src="/img/Bitmap.svg" alt="Blog banner 1">
+            <p class="mt-2 px-4 ">By
+              <span class="font-bold ">Abdullah</span>
+              | 03 March 2019</p>
+            <h3 class="font-bold text-2xl leading-tight mt-4 px-4 pb-6 hover:text-orange-400">
+              Increasing Prosperity With Positive Thinking
+            </h3>
+          </div>
+          <div class="overflow-hidden rounded hover:shadow-2xl cursor-pointer">
+            <img src="/img/Bitmap-2.svg" alt="Blog banner 1">
+            <p class="mt-2 px-4 ">By
+              <span class="font-bold ">Abdullah</span>
+              | 03 March 2019</p>
+            <h3 class="font-bold text-2xl leading-tight mt-4 px-4 pb-6 hover:text-orange-400">
+              Increasing Prosperity With Positive Thinking
+            </h3>
+          </div>
+          <div class="overflow-hidden rounded-xl hover:shadow-2xl cursor-pointer">
+            <img src="/img/Bitmap-1.svg" alt="Blog banner 1">
+            <p class="mt-2 px-4 ">By
+              <span class="font-bold ">Abdullah</span>
+              | 03 March 2019</p>
+            <h3 class="font-bold text-2xl leading-tight mt-4 px-4 pb-6 hover:text-orange-400">
+              Increasing Prosperity With Positive Thinking
+            </h3>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Section End -->
+    </main>
+
+    <footer
+      class="max-w-screen-xl mx-auto border-t px-8 py-8 grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch justify-between">
+
+      <img src="./img/logo.svg" alt="Productly" class="text-center self-start w-48">
+      <div class="w-full grid grid-cols-1 text-center md:text-left row-gap-12 sm:grid-cols-3 md:col-span-2">
+
+        <div>
+          <h3 class="text-xl font-light">Quick Links</h3>
+          <a href="/" class="my-2 mt-8 font-light block hover:text-orange-400">About us</a>
+          <a href="/" class="my-2 font-light block hover:text-orange-400">Blog</a>
+          <a href="/" class="my-2 font-light block hover:text-orange-400">Contact</a>
+          <a href="/" class="my-2 font-light block hover:text-orange-400">FAQ</a>
+        </div>
+        <div>
+          <h3 class="text-xl font-light">Legal Stuff</h3>
+          <a href="/" class="my-2 mt-8 font-light block hover:text-orange-400">Disclaimer</a>
+          <a href="/" class="my-2 font-light block hover:text-orange-400">Financing</a>
+          <a href="/" class="my-2 font-light block hover:text-orange-400">Privacy Policy</a>
+          <a href="/" class="my-2 font-light block hover:text-orange-400">Terms of Service</a>
+        </div>
+        <div>
+          <h3 class="text-lg w-48 mx-auto font-light sm:text-left sm:w-full">knowing you're always on the best energy
+            deal.
+          </h3>
+          <form action="/" method="POST">
+            <input type="text" class="px-4 py-3 border rounded-lg w-64 md:w-full mt-4"
+              placeholder="Enter your phone Number">
+            <input
+              class="border border-orange-400 rounded-lg block text-center mx-auto mt-4 bg-orange-400 font-bold text-white px-10 py-2 hover:text-black hover:bg-white transition-all duration-100 hover:shadow-xl sm:text-left sm:mx-0"
+              value="Sign up" type="submit">
+
+          </form>
+        </div>
+      </div>
+
+    </footer>
+
+
+
+  </div>
+
+</body>
+<script src="/dist/main.bundle.js" defer></script>
+</script>
+
+</html>
